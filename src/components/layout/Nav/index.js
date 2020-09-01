@@ -40,10 +40,11 @@ export const NavLogo = styled.div`
 `
 
 export const NavItem = styled.li`
-  display: flex;
-  align-items: center;
+  height: 80px;
   text-transform: lowercase;
   .nav-links {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     letter-spacing: 1px;
     font-size: 16px;
@@ -54,7 +55,7 @@ export const NavItem = styled.li`
       color: #8d93ab;
       transition: all 0.2s ease-out;
     }
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
       padding: 2rem;
       width: 100%;
       text-align: center;
