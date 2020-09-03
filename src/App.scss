@@ -10,6 +10,9 @@ $dark: #393b44;
   &::selection {
     background-color: $shadow;
   }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
