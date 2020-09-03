@@ -39,13 +39,19 @@ export default function Nav() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <NavItem>
-              <NavLink to='/portfolio' className='nav-links' onClick={closeMobileMenu}>
+              <NavLink
+                to='/portfolio'
+                activeClassName="active"
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
                 Portfolio
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
                 to='/projects'
+                activeClassName="active"
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -55,6 +61,7 @@ export default function Nav() {
             <NavItem>
               <NavLink
                 to='/blog'
+                activeClassName="active"
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -64,6 +71,7 @@ export default function Nav() {
             <NavItem>
               <NavLink
                 to='/about'
+                activeClassName="active"
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
