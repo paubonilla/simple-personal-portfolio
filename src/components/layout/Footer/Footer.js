@@ -1,13 +1,27 @@
 import React from 'react';
+import {
+  FooterContainer,
+  FooterInput,
+  FooterLinkItem,
+  FooterLinks,
+  FooterLinkWrapper,
+  FooterSubscription
+} from '../Footer/index'
+import {
+  AiFillFacebook,
+  AiOutlineInstagram,
+  AiFillYoutube,
+  AiFillTwitterSquare,
+  AiFillLinkedin
+} from 'react-icons/ai'
 import '../Footer/Footer.scss';
-import { AiFillFacebook, AiOutlineInstagram, AiFillYoutube, AiFillTwitterSquare, AiFillLinkedin } from 'react-icons/ai'
 import Button from '../Button/Button';
 import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className='footer-container'>
-      <section className='footer-subscription'>
+    <FooterContainer>
+      <FooterSubscription>
         <p className='footer-subscription-heading'>
           This is a footer
         </p>
@@ -16,8 +30,7 @@ function Footer() {
         </p>
         <div className='input-areas'>
           <form>
-            <input
-              className='footer-input'
+            <FooterInput
               name='email'
               type='email'
               placeholder='Your Email'
@@ -25,25 +38,25 @@ function Footer() {
             <Button buttonStyle='btn--outline'>Subscribe</Button>
           </form>
         </div>
-      </section>
-      <div class='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
+      </FooterSubscription>
+      <FooterLinks>
+        <FooterLinkWrapper>
+          <FooterLinkItem>
             <h2>Contact Me</h2>
             <Link to='/'>Contact</Link>
             <Link to='/'>Support</Link>
-          </div>
-        </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
+          </FooterLinkItem>
+        </FooterLinkWrapper>
+        <FooterLinkWrapper>
+          <FooterLinkItem>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div>
-        </div>
-      </div>
+            <a href="https://www.instagram.com/impaubonilla/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/pxixcv" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.youtube.com/channel/UCOzqf6znGEBswEYLu0exL-A?view_as=subscriber" target="_blank" rel="noopener noreferrer">Youtube</a>
+            <a href="https://twitter.com/pxixcv" target="_blank" rel="noopener noreferrer">Twitter</a>
+          </FooterLinkItem>
+        </FooterLinkWrapper>
+      </FooterLinks>
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
@@ -96,7 +109,7 @@ function Footer() {
           </div>
         </div>
       </section>
-    </div>
+    </FooterContainer>
   );
 }
 
