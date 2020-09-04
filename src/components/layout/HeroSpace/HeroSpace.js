@@ -19,7 +19,10 @@ export const HeroContainer = styled.div`
   > h1 {
     color: #fff;
     font-size: 100px;
-    // margin-top: -100px;
+    @media (max-width: 480px) {
+      font-size: 85px;
+    }
+    /* margin-top: -100px; */
   }
 
   > p {

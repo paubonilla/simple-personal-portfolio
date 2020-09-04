@@ -49,6 +49,9 @@ export const FooterLinks = styled.div`
   max-width: 1000px;
   display: flex;
   justify-content: center;
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `
 
 export const FooterLinkWrapper = styled.div`
