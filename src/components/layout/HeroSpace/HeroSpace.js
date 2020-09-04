@@ -1,22 +1,60 @@
 import React from 'react'
 import Button from '../Button/Button'
-import vid2 from '../../../videos/video-2.mp4'
+import vid2 from '../../../videos/baybayintagalog.mp4'
 import '../../../App.scss'
 import './HeroSpace.scss'
+import styled from 'styled-components'
+
+export const HeroContainer = styled.div`
+  /* background: url("images/img-home.jpg") center center/cover no-repeat; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+
+  > h1 {
+    color: #fff;
+    font-size: 100px;
+    // margin-top: -100px;
+  }
+
+  > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  }
+`
+
+export const Video = styled.video`
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+`
+
+export const ButtonsContainer = styled.div`
+  margin-top: 32px;
+`
 
 export default function HeroSpace() {
   return (
-    <div className="hero-container">
-      <video src={vid2} autoPlay loop muted />
+    <HeroContainer className="hero-container">
+      <Video src={vid2} autoPlay loop muted />
       <h1>Hello World, I'm Paulo</h1>
       <p>&#47;&#47; a front end web developer</p>
-      <div className="hero-btns">
+      <ButtonsContainer className="hero-btns">
         <Button
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
         >
-          View GitHub
+          <a href="http://github.com/paubonilla" target="_blank" rel="noopener noreferrer">View GitHub</a>
         </Button>
         <Button
           className="btns"
@@ -25,7 +63,7 @@ export default function HeroSpace() {
         >
           About me
           </Button>
-      </div>
-    </div>
+      </ButtonsContainer>
+    </HeroContainer>
   )
 }

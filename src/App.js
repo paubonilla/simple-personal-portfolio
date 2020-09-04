@@ -9,9 +9,15 @@ import Projects from './components/pages/Projects';
 import Blog from './components/pages/Blog';
 import About from './components/pages/About';
 
+import styled from 'styled-components'
+
+export const AppContainer = styled.div`
+  width: 100vw;
+`
+
 function App() {
   return (
-    <>
+    <AppContainer>
       <Router>
         <Nav />
         <Switch>
@@ -23,7 +29,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </>
+    </AppContainer>
   );
 }
 
