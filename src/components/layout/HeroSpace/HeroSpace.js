@@ -20,16 +20,18 @@ export const HeroContainer = styled.div`
     color: #fff;
     font-size: 100px;
     @media (max-width: 480px) {
-      font-size: 85px;
+      font-size: 80px;
     }
-    /* margin-top: -100px; */
   }
 
   > p {
     margin-top: 8px;
     color: #fff;
-    font-size: 32px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 18px;
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+    font-family: "Source Code Pro", monospace;
   }
 `
 
@@ -49,23 +51,20 @@ export default function HeroSpace() {
   return (
     <HeroContainer className="hero-container">
       <Video src={vid2} autoPlay loop muted />
-      <h1>Hello World, I'm Paulo</h1>
-      <p>&#47;&#47; a front end web developer</p>
+      <h1> Hello
+        <br /> World,
+        <br /> I'm
+        <br /> Paulo
+      </h1>
+      <p>&#47;&#47; a frontend web developer</p>
       <ButtonsContainer className="hero-btns">
-        <Button
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-        >
-          <a href="http://github.com/paubonilla" target="_blank" rel="noopener noreferrer">View GitHub</a>
-        </Button>
-        <Button
-          className="btns"
-          buttonStyle="btn--primary"
-          buttonSize="btn--large"
-        >
-          About me
-          </Button>
+        <a href="http://github.com/paubonilla" target="_blank" rel="noopener noreferrer">
+          <Button
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+          >
+            View GitHub
+        </Button></a>
       </ButtonsContainer>
     </HeroContainer>
   )

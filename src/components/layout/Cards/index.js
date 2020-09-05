@@ -2,18 +2,20 @@ import styled from 'styled-components'
 
 export const CardsContainer = styled.div`
   padding: 4rem;
-  background: #fff;
+  background: #f1f3f8;
   > h1 {
     text-align: center;
   }
   .cards__item__info {
     padding: 30px;
+    background: #e8e8e8;
   }
   
   .cards__item__text {
-    color: #252e48;
+    color: #196f3d;
     font-size: 12px;
     line-height: 24px;
+    font-family: "Source Code Pro", monospace;
   }
 `
 
@@ -23,6 +25,9 @@ export const CardsItem = styled.li`
   flex: 1;
   width: 300px;
   margin: 0 1rem;
+  @media (max-width: 480px) {
+    margin: 1rem 0;
+  }
   border-radius: 10px;
 `
 
@@ -39,8 +44,11 @@ export const CardsInner = styled.div`
   margin: 50px 0 45px;
 `
 
-export const CardsItems = styled.ul`
+export const CardsItemsContainer = styled.ul`
   padding: 10px;
+  @media (max-width: 480px) {
+    padding: 0;
+  }
   @media only screen and (min-width: 1024px) {
     display: flex;
   }
@@ -81,7 +89,7 @@ export const CardsItemImage = styled.img`
   transition: all 0.2s linear;
   opacity: 0.8;
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 1;
   }
 `

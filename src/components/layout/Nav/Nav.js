@@ -1,29 +1,29 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { NavBar, NavBarContainer, NavItem, NavLogo } from './index'
 import { NavLink } from 'react-router-dom'
-import Button from '../Button/Button'
+// import Button from '../Button/Button'
 import './Nav.scss'
 
 export default function Nav() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  // const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
+  // const showButton = () => {
+  //   if (window.innerWidth <= 960) {
+  //     setButton(false);
+  //   } else {
+  //     setButton(true);
+  //   }
+  // };
 
-  useEffect(() => {
-    showButton();
-  }, []);
+  // useEffect(() => {
+  //   showButton();
+  // }, []);
 
-  window.addEventListener('resize', showButton);
+  // window.addEventListener('resize', showButton);
 
   return (
     <>
@@ -78,7 +78,7 @@ export default function Nav() {
                 About
               </NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink
                 to='/contacts'
                 className='nav-links-mobile'
@@ -86,9 +86,9 @@ export default function Nav() {
               >
                 Contacts
               </NavLink>
-            </NavItem>
+            </NavItem> */}
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Contacts</Button>}
+          {/* {button && <Button buttonStyle='btn--outline'>Contacts</Button>} */}
         </NavBarContainer>
       </NavBar>
     </>

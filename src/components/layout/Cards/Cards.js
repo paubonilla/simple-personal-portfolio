@@ -5,16 +5,16 @@ import pic3 from '../../../images/img-3.jpg'
 import pic5 from '../../../images/img-5.jpg'
 import pic1 from '../../../images/img-1.jpg'
 import pic6 from '../../../images/img-6.jpg'
-import { CardsContainer, CardsWrapper, CardsInner, CardsItems } from '../Cards/index'
+import { CardsContainer, CardsWrapper, CardsInner, CardsItemsContainer } from '../Cards/index'
 import './Cards.scss'
 
 export default function Cards() {
   return (
     <CardsContainer>
-      <h1>Check out</h1>
+      {/* <h1>Check out</h1> */}
       <CardsWrapper>
         <CardsInner>
-          <CardsItems>
+          <CardsItemsContainer>
             <CardItem
               src={pic9}
               text="// this is my portfolio"
@@ -29,8 +29,8 @@ export default function Cards() {
               label="UI/UX"
               path="/projects"
             />
-          </CardsItems>
-          <CardsItems>
+          </CardsItemsContainer>
+          <CardsItemsContainer>
             <CardItem
               src={pic5}
               text="// this is my blog page"
@@ -52,7 +52,7 @@ export default function Cards() {
               label="Photography"
               path="/gallery"
             />
-          </CardsItems>
+          </CardsItemsContainer>
         </CardsInner>
       </CardsWrapper>
     </CardsContainer>
