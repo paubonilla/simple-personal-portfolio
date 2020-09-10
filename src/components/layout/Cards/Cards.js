@@ -1,7 +1,7 @@
 import React from 'react'
 import CardItem from './CardItem'
-import pic9 from '../../../images/img-9.jpg'
-import pic3 from '../../../images/img-3.jpg'
+import pic9 from '../../../images/self.jpg'
+import pic3 from '../../../images/k8.jpg'
 import pic5 from '../../../images/img-5.jpg'
 import pic1 from '../../../images/img-1.jpg'
 import pic6 from '../../../images/img-6.jpg'
@@ -35,19 +35,19 @@ export default function Cards() {
               src={pic5}
               text="// this is my blog page"
               alt="..."
-              label="Imagination"
+              label="Journal"
               path="/blog"
             />
             <CardItem
               src={pic1}
-              text="about me"
+              text="// see my resume"
               alt="..."
-              label="Adventure"
+              label="About"
               path="/about"
             />
             <CardItem
               src={pic6}
-              text="about me"
+              text="// this is my gallery section"
               alt="..."
               label="Photography"
               path="/gallery"

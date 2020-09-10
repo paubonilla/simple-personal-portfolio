@@ -62,15 +62,15 @@
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
+    top: -2px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    color: #f1f3f8;
   }
 
   .fa-times {
-    color: #f1f3f8;
     font-size: 2rem;
   }
 

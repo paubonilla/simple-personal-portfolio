@@ -5,6 +5,9 @@ export const NavBar = styled.nav`
   height: 80px;
   display: flex;
   justify-content: center;
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
@@ -26,13 +29,14 @@ export const NavLogo = styled.div`
     justify-self: start;
     margin-left: 20px;
     @media (max-width: 480px) {
-      margin-left: 0;
+      margin-left: 20px;
     }
     cursor: pointer;
     text-decoration: none;
     text-transform: lowercase;
     letter-spacing: 8px;
     font-family: 'Questrial', sans-serif;
+    /* font-family: "Overpass Mono", monospace; */
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -46,7 +50,7 @@ export const NavItem = styled.li`
     display: flex;
     align-items: center;
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 1.7px;
     font-size: 16px;
     height: 100%;
     transition: all 0.5s ease-out;
@@ -66,5 +70,8 @@ export const NavItem = styled.li`
         border-radius: 0;
       }
     }
+  }
+  .active {
+    color: #8d93ab;
   }
 `

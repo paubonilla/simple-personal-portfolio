@@ -15,19 +15,23 @@ export const HeroContainer = styled.div`
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
-
+  
   > h1 {
-    color: #fff;
+    border: 1px solid #f1f3f8;
+    padding: 40px;
+    color: #f1f3f8;
     font-size: 100px;
+    font-family: 'Anonymous Pro', monospace;
     @media (max-width: 480px) {
       font-size: 80px;
     }
   }
-
+  
   > p {
     margin-top: 8px;
-    color: #fff;
+    color: #f1f3f8;
     font-size: 18px;
+    opacity: 0.7;
     @media (max-width: 480px) {
       font-size: 14px;
     }

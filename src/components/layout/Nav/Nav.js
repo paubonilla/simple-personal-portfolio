@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { NavBar, NavBarContainer, NavItem, NavLogo } from './index'
 import { NavLink } from 'react-router-dom'
+import { GoThreeBars } from 'react-icons/go'
+import { FaTimes } from 'react-icons/fa'
 // import Button from '../Button/Button'
 import './Nav.scss'
 
@@ -35,11 +37,12 @@ export default function Nav() {
           </NavLink>
           </NavLogo>
           <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            {click ? <FaTimes /> : <GoThreeBars />}
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <NavItem>
               <NavLink
+                exact
                 to='/portfolio'
                 activeClassName="active"
                 className='nav-links'
@@ -50,6 +53,7 @@ export default function Nav() {
             </NavItem>
             <NavItem>
               <NavLink
+                exact
                 to='/projects'
                 activeClassName="active"
                 className='nav-links'
@@ -60,6 +64,7 @@ export default function Nav() {
             </NavItem>
             <NavItem>
               <NavLink
+                exact
                 to='/blog'
                 activeClassName="active"
                 className='nav-links'
@@ -70,6 +75,7 @@ export default function Nav() {
             </NavItem>
             <NavItem>
               <NavLink
+                exact
                 to='/about'
                 activeClassName="active"
                 className='nav-links'
