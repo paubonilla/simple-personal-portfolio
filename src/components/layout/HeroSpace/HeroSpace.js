@@ -24,6 +24,7 @@ export const HeroContainer = styled.div`
     font-family: 'Anonymous Pro', monospace;
     @media (max-width: 480px) {
       font-size: 80px;
+      padding: 20px;
     }
   }
   
