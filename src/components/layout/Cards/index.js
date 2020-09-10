@@ -68,6 +68,7 @@ export const CardsItemPicWrap = styled.figure`
     max-width: calc((100%) - 60px);
     font-size: 12px;
     font-weight: 700;
+    border-radius: 4px 0 0 0;
     color: #fff;
     background-color: #1f98f4;
     box-sizing: border-box;

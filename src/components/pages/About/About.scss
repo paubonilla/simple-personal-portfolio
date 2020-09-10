@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  .header {
+    text-transform: uppercase;
+    font-weight: 900;
+    > span {
+      text-transform: none;
+      opacity: 0.2;
+      color: #d6e0f0;
+    }
+  }
+  .second-row {
+    font-size: 12px;
+  }
+}

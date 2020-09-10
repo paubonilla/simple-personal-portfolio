@@ -27,7 +27,7 @@ function Footer() {
         <FooterLinkWrapper>
           <FooterLinkItem>
             <h5>Email</h5>
-            <Link to='/'>paulo@gmail.com</Link>
+            <Link to='/'><a href="mailto:impaubonilla@gmail.com" target="_blank" rel="noopener noreferrer">impaubonilla@gmail.com</a></Link>
           </FooterLinkItem>
         </FooterLinkWrapper>
         <FooterLinkWrapper>

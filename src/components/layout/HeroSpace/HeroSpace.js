@@ -17,8 +17,10 @@ export const HeroContainer = styled.div`
   object-fit: contain;
   
   > h1 {
-    border: 1px solid #f1f3f8;
-    padding: 40px;
+    border: 2px solid #f1f3f8;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
     color: #f1f3f8;
     font-size: 100px;
     font-family: 'Anonymous Pro', monospace;
