@@ -40,6 +40,7 @@ export const Form = styled.div`
     @media (max-width: 480px) {
       width: 100%;
       border-radius: 0;
+      margin: 20px 0 0;
       padding: 20px 0;
     }
   }
