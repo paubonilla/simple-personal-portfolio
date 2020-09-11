@@ -36,7 +36,7 @@ export default function AboutDataItems({ fullName, field, location, desc, header
           </div>
           <div className="row__three">
             <Form>
-              <h5>Got a project? <br /> Big or small. Hit me up.</h5>
+              <h5>Got a project?<br />Big or small. Hit me up.</h5>
               <a href="mailto:impaubonilla@gmail.com" target="_blank" rel="noopener noreferrer">impaubonilla@gmail.com</a>
             </Form>
           </div>

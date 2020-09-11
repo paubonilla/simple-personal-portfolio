@@ -11,7 +11,8 @@ export const AboutContainer = styled.div`
   color: #f1f3f8;
   margin-top: -4em;
   padding-top: 27em;
-  font-family: "Overpass Mono", monospace;
+  /* font-family: "Overpass Mono", monospace; */
+  font-family: 'Overpass', sans-serif;
   @media (max-width: 480px) {
     padding: 0;
   }
