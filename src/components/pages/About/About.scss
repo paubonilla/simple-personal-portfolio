@@ -1,10 +1,10 @@
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 80vw;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   @media (max-width: 480px) {
+    max-width: 800px;
     flex-direction: column;
   }
   margin: 0 auto;
@@ -19,6 +19,16 @@
 
 .row__two {
   width: 100%;
+  max-width: 200px;
+  @media (max-width: 480px) {
+    max-width: 100%;
+  }
+  display: flex;
+  flex-direction: column;
+}
+
+.row__three {
+  width: 100%;
   max-width: 300px;
   @media (max-width: 480px) {
     max-width: 100%;
@@ -30,8 +40,8 @@
 .column {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  margin: 20px 0;
+  font-size: 18px;
+  margin-bottom: 50px;
   > .header span {
     line-height: 1.28;
     text-transform: uppercase;

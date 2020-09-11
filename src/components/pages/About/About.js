@@ -19,6 +19,21 @@ export default function About() {
             </div>
           </div>
           <div className="row__two">
+            <div className="column">
+              <strong>UI Tools</strong>
+              <p>VS Code</p>
+              <p>Adobe XD</p>
+              <p>Figma</p>
+            </div>
+            <div className="column">
+              <strong>Writing Tools</strong>
+              <p>HTML</p>
+              <p>SCSS</p>
+              <p>Javascript</p>
+              <p>Styled Components</p>
+            </div>
+          </div>
+          <div className="row__three">
             <Form>
               <h5>Got a project? <br /> Big or small. Hit me up.</h5>
               <a href="mailto:impaubonilla@gmail.com" target="_blank" rel="noopener noreferrer">impaubonilla@gmail.com</a>

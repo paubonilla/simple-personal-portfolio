@@ -3,7 +3,11 @@ import self from '../../../images/self.jpg'
 
 export const AboutContainer = styled.div`
   background-image: url(${self});
-  background-position: center;
+  background-position: 100% 55%;
+  @media (max-width: 480px) {
+    background-position: center;
+    /* background-size: 200% , cover; */
+  }
   background-size: cover;
   background-repeat: no-repeat;
   color: #f1f3f8;
@@ -15,7 +19,10 @@ export const AbaoutTopHeadline = styled.div`
   height: 100%;
   width: 100vw;
   font-size: 40px;
-  padding-top: 24rem;
+  padding-top: 48rem;
+  @media (max-width: 480px) {
+    padding-top: 24rem;
+  }
   font-family: "Overpass Mono", monospace;
 `
 
@@ -29,14 +36,20 @@ export const Form = styled.div`
   }
   > a {
     font-size: 16px;
-    background-color: #f1f3f8;
     border-radius: 5px;
+    background-color: #f1f3f8;
     color: #393b44;
     text-decoration: none;
     margin: 20px 0;
     padding: 8px 20px;
     display: flex;
     justify-content: center;
+    transition: all 0.2s ease-out;
+    &:hover {
+      background-color: #393b44;
+      color: #f1f3f8;
+      transition: all 0.2s ease-out;
+    }
     @media (max-width: 480px) {
       width: 100%;
       border-radius: 0;
