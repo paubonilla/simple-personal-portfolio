@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import self from '../../../images/self.jpg'
+import self from '../../../images/self-dark.jpg'
 
 export const AboutContainer = styled.div`
   height: 100%;
