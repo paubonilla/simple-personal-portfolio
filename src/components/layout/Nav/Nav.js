@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { NavBar, NavBarContainer, NavItem, NavLogo } from './index'
 import { NavLink } from 'react-router-dom'
-import { GoThreeBars } from 'react-icons/go'
-import { FaTimes } from 'react-icons/fa'
+// import { BsX, BsList } from 'react-icons/bs'
+// import { BiX, BiMenu } from 'react-icons/bi'
+import { HiPuzzle, HiMenuAlt4, HiX } from 'react-icons/hi'
 // import Button from '../Button/Button'
 import './Nav.scss'
 
@@ -33,11 +34,13 @@ export default function Nav() {
         <NavBarContainer>
           <NavLogo>
             <NavLink to='/' onClick={closeMobileMenu}>
-              Pau
-          </NavLink>
+              <HiPuzzle />
+            </NavLink>
           </NavLogo>
           <div className='menu-icon' onClick={handleClick}>
-            {click ? <FaTimes /> : <GoThreeBars />}
+            {/* {click ? <BsX /> : <BsList />} */}
+            {/* {click ? <BiX /> : <BiMenu />} */}
+            {click ? <HiX /> : <HiMenuAlt4 />}
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <NavItem>

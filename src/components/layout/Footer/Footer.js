@@ -33,7 +33,7 @@ function Footer() {
         <FooterLinkWrapper>
           <FooterLinkItem>
             <h5>Location</h5>
-            <Link to='/'>Los Angeles, CA</Link>
+            <p>Los Angeles, CA</p>
           </FooterLinkItem>
         </FooterLinkWrapper>
         <FooterLinkWrapper>

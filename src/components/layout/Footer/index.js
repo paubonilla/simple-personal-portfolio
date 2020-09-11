@@ -48,6 +48,7 @@ export const FooterLinkItem = styled.div`
     color: #f1f3f8;
     text-decoration: none;
     margin-bottom: 3px;
+    transition: 0.6s ease-out;
     &:hover {
       color: #8d93ab;
       transition: 0.3s ease-out;

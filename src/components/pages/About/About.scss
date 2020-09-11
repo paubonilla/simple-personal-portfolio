@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 800px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   @media (max-width: 480px) {
     flex-direction: column;
@@ -29,19 +30,20 @@
 .column {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 20px 0;
-  > .header {
+  > .header span {
+    line-height: 1.28;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 2.5rem;
-    > span {
+    font-size: 3rem;
+    // color: #393b44;
+    > .__span {
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.7);
       text-transform: none;
-      opacity: 0.5;
+      opacity: 0.6;
       color: #d6e0f0;
     }
-  }
-  .second-col {
-    font-size: 14px;
   }
 }
