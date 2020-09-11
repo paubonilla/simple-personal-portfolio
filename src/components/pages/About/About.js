@@ -1,10 +1,10 @@
 import React from 'react'
 import './About.scss'
-import self from '../../../images/self.jpg'
+import selfiee from '../../../images/selfiee.jpg'
 import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
-  background-image: url(${self});
+  background-image: url(${selfiee});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,8 +23,10 @@ export const AbaoutTopHeadline = styled.div`
 
 export const Form = styled.div`
   > h5 {
-    padding-top: 10px;
-    font-size: 16px;
+    @media (max-width: 480px) {
+      padding-top: 10px;
+    }
+    font-size: 14px;
     font-weight: 100;
   }
   > a {
@@ -51,12 +53,18 @@ export default function About() {
     <AboutContainer>
       <AbaoutTopHeadline className="aboutTopHeadline">
         <div className="container">
-          <div className="row">
+          <div className="row__one">
             <div className="column">
               <p className="header">Paulo Feliciano Bonilla <br /> &#60;<span>Frontend Developer</span> &#47;&#62; <br /> Los Angeles, CA</p>
-              <p className="second-row">This is my website, please feel welcomed to browse through it and learn more about me &#38; my work. Thank you for your time, enjoy! And maybe you can help me improve my skills. If you have any feedback or ways that I can work on, you can always contact me.
+              <p className="second-col">This is my website, please feel welcomed to browse through it and learn more about me &#38; my work. Thank you for your time, enjoy! And maybe you can help me improve my skills. If you have any feedback or ways that I can work on, you can always contact me.
               </p>
             </div>
+            <div className="column">
+              <strong>Framework</strong>
+              <p className="subheader">This site was built with React and espcially with <i>Hooks</i>.</p>
+            </div>
+          </div>
+          <div className="row__two">
             <Form>
               <h5>Got a project? <br /> Big or small. Hit me up.</h5>
               <a href="mailto:impaubonilla@gmail.com" target="_blank" rel="noopener noreferrer">impaubonilla@gmail.com</a>
