@@ -23,6 +23,9 @@ export const AboutWrapper = styled.div`
 
 export const AbaoutTopHeadline = styled.div`
   padding-top: 27rem;
+  @media (max-width: 480px) {
+    padding-top: 26rem;
+  }
   font-family: "Overpass Mono", monospace;
 `
 
