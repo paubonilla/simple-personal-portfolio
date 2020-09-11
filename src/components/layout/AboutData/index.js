@@ -10,15 +10,18 @@ export const AboutContainer = styled.div`
 `
 
 export const AboutWrapper = styled.div`
-
+  width: 100%;
+  max-width: 71vw;
+  /* display: flex;
+  justify-content: space-between; */
+  margin: 0 auto;
+  @media (max-width: 480px) {
+    max-width: 700px;
+    flex-direction: column;
+  }
 `
 
 export const AbaoutTopHeadline = styled.div`
-  display: flex;
-  justify-content: space-around;
-  height: 100%;
-  width: 100vw;
-  font-size: 40px;
   padding-top: 27rem;
   font-family: "Overpass Mono", monospace;
 `
@@ -37,8 +40,8 @@ export const Form = styled.div`
     background-color: #f1f3f8;
     color: #393b44;
     text-decoration: none;
-    margin: 20px 0;
-    padding: 8px 20px;
+    margin: 50px 0;
+    padding: 18px 20px;
     display: flex;
     justify-content: center;
     transition: all 0.2s ease-out;
