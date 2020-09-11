@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../App.scss'
 import Cards from '../layout/Cards/Cards'
+import Footer from '../layout/Footer/Footer'
 import HeroSpace from '../layout/HeroSpace/HeroSpace'
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <HeroSpace />
       <Cards />
+      <Footer />
     </>
   )
 }

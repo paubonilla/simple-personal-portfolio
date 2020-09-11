@@ -2,31 +2,38 @@ import styled from 'styled-components'
 import self from '../../../images/self.jpg'
 
 export const AboutContainer = styled.div`
+  height: 100%;
+  width: 100%;
   background-image: url(${self});
-  background-position: center;
-  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: #f1f3f8;
+  margin-top: -4em;
+  padding-top: 27em;
+  font-family: "Overpass Mono", monospace;
+  @media (max-width: 480px) {
+    padding: 0;
+  }
 `
 
 export const AboutWrapper = styled.div`
-  width: 100%;
-  max-width: 71vw;
-  /* display: flex;
-  justify-content: space-between; */
+  width: 80%;
+  position: relative;
+  /* max-width: 71vw; */
+  /* display: flex; */
+  /* justify-content: space-between; */
   margin: 0 auto;
   @media (max-width: 480px) {
-    max-width: 700px;
-    flex-direction: column;
+    width: 100%;
   }
 `
 
 export const AbaoutTopHeadline = styled.div`
-  padding-top: 27rem;
   @media (max-width: 480px) {
-    padding-top: 24rem;
+    padding-top: 27rem;
   }
-  font-family: "Overpass Mono", monospace;
+  
 `
 
 export const Form = styled.div`
@@ -38,26 +45,25 @@ export const Form = styled.div`
     font-weight: 100;
   }
   > a {
-    font-size: 16px;
-    border-radius: 5px;
-    background-color: #f1f3f8;
-    color: #393b44;
-    text-decoration: none;
-    margin: 50px 0;
-    padding: 18px 20px;
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 50px 0;
+    color: #393b44;
+    padding: 18px 20px;
+    background-color: #f1f3f8;
     transition: all 0.2s ease-out;
     &:hover {
-      background-color: #393b44;
       color: #f1f3f8;
+      background-color: #393b44;
       transition: all 0.2s ease-out;
     }
     @media (max-width: 480px) {
       width: 100%;
-      border-radius: 0;
-      margin: 20px 0 0;
       padding: 20px 0;
+      margin: 20px 0 0;
+      border-radius: 0;
     }
   }
 `

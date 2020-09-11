@@ -1,6 +1,7 @@
 import React from 'react'
 import { AboutContainer, AbaoutTopHeadline, AboutWrapper, Form } from './index'
 import './AboutData.scss'
+import Footer from '../Footer/Footer'
 
 export default function AboutDataItems({ fullName, field, location, desc, header5 }) {
   return (
@@ -9,7 +10,7 @@ export default function AboutDataItems({ fullName, field, location, desc, header
         <AboutWrapper>
           <div className="row__one">
             <div className="column">
-              <p className="header"><span>{fullName} <br /> &#60;<span className="__span">{field}</span> &#47;&#62; <br /> {location}</span></p>
+              <p className="header"><span>{fullName}<br />&#60;<span className="__span">{field}</span> &#47;&#62; <br /> {location}</span></p>
 
               <p>{desc}</p>
             </div>
@@ -39,6 +40,7 @@ export default function AboutDataItems({ fullName, field, location, desc, header
               <a href="mailto:impaubonilla@gmail.com" target="_blank" rel="noopener noreferrer">impaubonilla@gmail.com</a>
             </Form>
           </div>
+          <Footer />
         </AboutWrapper>
       </AbaoutTopHeadline>
     </AboutContainer>

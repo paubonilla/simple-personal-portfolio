@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import { Switch, Route } from 'react-router-dom'
 import Nav from './components/layout/Nav/Nav';
-import Footer from './components/layout/Footer/Footer';
+// import Footer from './components/layout/Footer/Footer';
 import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio';
 import Projects from './components/pages/Projects';
@@ -26,7 +26,7 @@ function App() {
         <Route path='/blog' component={Blog} />
         <Route path='/about' component={About} />
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </AppContainer>
   );
 }
