@@ -3,11 +3,14 @@ import self from '../../../images/self.jpg'
 
 export const AboutContainer = styled.div`
   background-image: url(${self});
-  /* background-position: 100% 55%; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #f1f3f8;
+`
+
+export const AboutWrapper = styled.div`
+
 `
 
 export const AbaoutTopHeadline = styled.div`
@@ -16,7 +19,7 @@ export const AbaoutTopHeadline = styled.div`
   height: 100%;
   width: 100vw;
   font-size: 40px;
-  padding-top: 24rem;
+  padding-top: 27rem;
   font-family: "Overpass Mono", monospace;
 `
 
