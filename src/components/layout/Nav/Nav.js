@@ -43,7 +43,7 @@ export default function Nav() {
             {click ? <HiX /> : <HiMenuAlt4 />}
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <NavItem>
+            {/* <NavItem>
               <NavLink
                 exact
                 to='/portfolio'
@@ -53,7 +53,7 @@ export default function Nav() {
               >
                 Portfolio
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLink
                 exact

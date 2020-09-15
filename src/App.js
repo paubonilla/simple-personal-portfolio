@@ -5,7 +5,7 @@ import Nav from './components/layout/Nav/Nav';
 // import Footer from './components/layout/Footer/Footer';
 import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio';
-import Projects from './components/pages/Projects';
+import Projects from './components/pages/Projects/Projects';
 import Blog from './components/pages/Blog';
 import About from './components/pages/About/About';
 

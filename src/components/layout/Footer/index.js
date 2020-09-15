@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
   /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, #393b44 100%); */
+  background: linear-gradient(90deg, rgb(28, 27, 27, 0.7) 0%, #393b44 100%);
   padding: 4rem 0 2rem 0;
   display: flex;
   flex-direction: column;
