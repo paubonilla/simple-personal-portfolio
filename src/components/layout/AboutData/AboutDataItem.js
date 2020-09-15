@@ -4,11 +4,9 @@ import {
   AbaoutTopHeadline,
   AboutWrapper,
   Form,
-  AboutFooterLinkItem,
-  AboutFooterLinks,
-  AboutFooterLinkWrapper
 } from './index'
 import './AboutData.scss'
+import { AboutFooter } from './AboutFooter'
 
 export default function AboutDataItems({ fullName, field, location, desc, header5 }) {
   return (
@@ -18,7 +16,6 @@ export default function AboutDataItems({ fullName, field, location, desc, header
           <div className="row__one">
             <div className="column">
               <p className="header"><span>{fullName}<br />&#60;<span className="__span">{field}</span> &#47;&#62; <br /> {location}</span></p>
-
               <p>{desc}</p>
             </div>
             <div className="column">
@@ -47,34 +44,9 @@ export default function AboutDataItems({ fullName, field, location, desc, header
               <a href="mailto:impaubonilla@gmail.com" target="_blank" rel="noopener noreferrer">impaubonilla@gmail.com</a>
             </Form>
           </div>
-          <AboutFooterLinks>
-            <AboutFooterLinkWrapper>
-              <AboutFooterLinkItem style={{ margin: 0, padding: '40px 0', fontSize: '18px' }}>
-                <span className="copyright">© 2020 Paulo Feliciano Bonilla</span>
-              </AboutFooterLinkItem>
-            </AboutFooterLinkWrapper>
-            <AboutFooterLinkWrapper>
-              <AboutFooterLinkItem style={{ margin: 0, padding: '40px 0', fontSize: '18px' }}>
-                <h5>Email</h5>
-                <a href="mailto:impaubonilla@gmail.com" target="_blank" rel="noopener noreferrer">impaubonilla@gmail.com</a>
-              </AboutFooterLinkItem>
-            </AboutFooterLinkWrapper>
-            <AboutFooterLinkWrapper>
-              <AboutFooterLinkItem style={{ margin: 0, padding: '40px 0', fontSize: '18px' }}>
-                <h5>Location</h5>
-                <p>Los Angeles, CA</p>
-              </AboutFooterLinkItem>
-            </AboutFooterLinkWrapper>
-            <AboutFooterLinkWrapper>
-              <AboutFooterLinkItem style={{ margin: 0, padding: '40px 0', fontSize: '18px' }}>
-                <h5>Social</h5>
-                <a href="https://www.instagram.com/impaubonilla/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://www.facebook.com/pxixcv" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a href="https://www.youtube.com/channel/UCOzqf6znGEBswEYLu0exL-A?view_as=subscriber" target="_blank" rel="noopener noreferrer">Youtube</a>
-                <a href="https://twitter.com/pxixcv" target="_blank" rel="noopener noreferrer">Twitter</a>
-              </AboutFooterLinkItem>
-            </AboutFooterLinkWrapper>
-          </AboutFooterLinks>
+          <AboutFooter
+            copyright='© 2020 Paulo Feliciano Bonilla'
+          />
         </AboutWrapper>
       </AbaoutTopHeadline>
     </AboutContainer>
