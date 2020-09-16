@@ -3,7 +3,7 @@ import {
   AboutContainer,
   AbaoutTopHeadline,
   AboutWrapper,
-  Form,
+  Form
 } from './index'
 import './AboutData.scss'
 import { AboutFooter } from './AboutFooter'

@@ -35,8 +35,8 @@ export const CardsWrapper = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
-  max-width: 1120px;
-  width: 90%;
+  /* max-width: 1120px; */
+  /* width: 90%; */
   margin: 0 auto;
 `
 export const CardsInner = styled.div`
@@ -90,6 +90,7 @@ export const CardsItemImage = styled.img`
   transition: all 0.2s linear;
   opacity: 0.8;
   &:hover {
+    transition: all 0.2s linear;
     transform: scale(1.1);
     opacity: 1;
   }

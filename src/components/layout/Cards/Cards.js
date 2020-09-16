@@ -1,6 +1,5 @@
 import React from 'react'
 import CardItem from './CardItem'
-import pic9 from '../../../images/k8.jpg'
 import pic3 from '../../../images/work.jpg'
 import pic5 from '../../../images/img-5.jpg'
 import pic1 from '../../../images/img-1.jpg'
@@ -11,17 +10,9 @@ import './Cards.scss'
 export default function Cards() {
   return (
     <CardsContainer>
-      {/* <h1>Check out</h1> */}
       <CardsWrapper>
         <CardsInner>
           <CardsItemsContainer>
-            <CardItem
-              src={pic9}
-              text="// this is my portfolio"
-              alt="..."
-              label="Personal"
-              path="/portfolio"
-            />
             <CardItem
               src={pic3}
               text="// this is my projects container"
@@ -29,8 +20,6 @@ export default function Cards() {
               label="UI/UX"
               path="/projects"
             />
-          </CardsItemsContainer>
-          <CardsItemsContainer>
             <CardItem
               src={pic5}
               text="// this is my blog page"
@@ -38,6 +27,8 @@ export default function Cards() {
               label="Journal"
               path="/blog"
             />
+          </CardsItemsContainer>
+          <CardsItemsContainer>
             <CardItem
               src={pic1}
               text="// see my resume"
@@ -49,7 +40,7 @@ export default function Cards() {
               src={pic6}
               text="// this is my gallery section"
               alt="..."
-              label="Photography"
+              label="Galllery"
               path="/gallery"
             />
           </CardsItemsContainer>
