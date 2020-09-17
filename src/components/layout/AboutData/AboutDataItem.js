@@ -20,22 +20,38 @@ export default function AboutDataItems({ fullName, field, location, desc, header
             </div>
             <div className="column">
               <strong>{header5}</strong>
-              <p className="subheader">This site was built with React <i>Hooks</i>.</p>
+              <p className="subheader">This site was built with React.js</p>
             </div>
           </div>
           <div className="row__two">
             <div className="column">
-              <strong>UI Tools</strong>
+              <strong>Editor/IDE</strong>
               <p>VS Code</p>
+            </div>
+            <div className="column">
+              <strong>Illustration</strong>
               <p>Adobe XD</p>
               <p>Figma</p>
             </div>
             <div className="column">
-              <strong>Writing Tools</strong>
-              <p>HTML</p>
+              <strong>Javascript Frameworks</strong>
+              <p>React.js</p>
+              <p style={{ textIndent: '10px' }}><i>--Hooks</i></p>
+              <p style={{ textIndent: '10px' }}><i>--Router</i></p>
+            </div>
+            <div className="column">
+              <strong>Frontend</strong>
+              <p>HTML &#38; CSS</p>
               <p>SCSS</p>
               <p>Javascript</p>
               <p>Styled Components</p>
+              <p>Material UI</p>
+            </div>
+            <div className="column">
+              <strong>Backend</strong>
+              <p>GraphQL</p>
+              <p>Apollo</p>
+              <p>Hasura</p>
             </div>
           </div>
           <div className="row__three">
