@@ -36,20 +36,23 @@
     flex-direction: column;
     width: 100%;
     height: 90vh;
+    padding: 8rem 0;
     position: absolute;
     text-align: center;
-    top: 80px;
+    top: 0;
     left: -100%;
-    opacity: 1;
+    opacity: 0;
     transition: all 0.5s ease;
   }
 
   .nav-menu.active {
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, #393b44 100%);
     left: 0;
+    top: 0;
+    height: 100vh;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: -1;
   }
 
   .navbar-logo {

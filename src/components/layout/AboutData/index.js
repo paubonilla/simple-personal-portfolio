@@ -9,7 +9,7 @@ export const AboutContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   color: #f1f3f8;
-  margin-top: -4em;
+  margin-top: -5em;
   padding-top: 27em;
   /* font-family: "Overpass Mono", monospace; */
   font-family: 'Overpass', sans-serif;
@@ -30,6 +30,11 @@ export const AboutWrapper = styled.div`
   }
 `
 
+export const ProgrammingLanguages = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
 export const AbaoutTopHeadline = styled.div`
   @media (max-width: 480px) {
     padding-top: 27rem;
@@ -37,7 +42,7 @@ export const AbaoutTopHeadline = styled.div`
   
 `
 
-export const Form = styled.div`
+export const ContactMe = styled.div`
   > h5 {
     @media (max-width: 480px) {
       padding-top: 10px;

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const NavBar = styled.nav`
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, #393b44 100%);
+  /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, #393b44 100%); */
   height: 80px;
   display: flex;
   justify-content: center;
@@ -26,6 +26,7 @@ export const NavBarContainer = styled.div`
 export const NavLogo = styled.div`
   a {
     color: #f1f3f8;
+    /* color: #174C4B; */
     justify-self: start;
     margin-left: 20px;
     @media (max-width: 480px) {

@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  
   object-fit: contain;
   
   > h1 {
@@ -41,6 +41,7 @@ export const Video = styled.video`
   width: 100%;
   height: 100%;
   position: fixed;
+  margin-top: -5rem;
   z-index: -1;
 `
 

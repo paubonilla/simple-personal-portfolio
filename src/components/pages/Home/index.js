@@ -4,13 +4,14 @@ export const ProgressBar = styled.div`
   padding: 5rem 10rem;
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 2rem auto;
   color: #f1f3f8;
   display: flex;
   flex-direction: column;
   background-color: #393b44;
   @media (max-width: 480px) {
     padding: 30px;
+    margin: 0;
   }
 
   .header {

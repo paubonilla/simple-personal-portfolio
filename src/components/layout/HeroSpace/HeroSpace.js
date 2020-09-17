@@ -10,9 +10,9 @@ export default function HeroSpace() {
     <HeroContainer className="hero-container">
       <Video src={vid2} autoPlay loop muted />
       <h1> Hello
-        <br /> World,
-        <br /> I'm
-        <br /> Paulo
+      <br /> World,
+      <br /> I'm
+      <br /> Paulo
       </h1>
       <p>&#47;&#47; a frontend web developer</p>
       <ButtonsContainer className="hero-btns">
