@@ -1,5 +1,11 @@
 import React from 'react'
 import img1 from '../../../images/img-1.jpg'
+import jawvwarp from '../../../images/projects/jawvwarp.png'
+import movie from '../../../images/projects/movie-watchlist.png'
+import hangman from '../../../images/projects/hangman.png'
+import dmv from '../../../images/projects/dmv-test.png'
+import pokedex from '../../../images/projects/pokedex.png'
+import ttt from '../../../images/projects/the-office-tic-tac-toe.png'
 import { ProjectDataItems } from './ProjectDataItems'
 import { ProjectContainer } from './index'
 
@@ -8,37 +14,37 @@ export const ProjectFiles = () => {
     <ProjectContainer>
       <ProjectDataItems
         src="https://paubonilla.github.io/tic-tac-toe/"
-        img={img1}
+        img={ttt}
         title='Tic Tac Toe'
         desc='this app was built with React'
       />
       <ProjectDataItems
         src="https://pokedex027.netlify.app/"
-        img={img1}
+        img={pokedex}
         title='Pokédex'
         desc='this app was built with React'
       />
       <ProjectDataItems
         src="https://paubonilla.github.io/hangman-react/"
-        img={img1}
+        img={hangman}
         title='Hangman'
         desc='this app was built with React'
       />
       <ProjectDataItems
         src="https://paubonilla.github.io/dmv-permit-practice-test/"
-        img={img1}
+        img={dmv}
         title='DMV Permit Practice Test'
         desc='this app was built with React'
       />
       <ProjectDataItems
         src="https://paubonilla.github.io/movie-watchlist/"
-        img={img1}
+        img={movie}
         title='Movie Watchlist'
         desc='this app was built with React'
       />
       <ProjectDataItems
         src="https://jawvwarp.netlify.app/"
-        img={img1}
+        img={jawvwarp}
         title='JAWVWARP Website'
         desc='this app was built with React'
       />

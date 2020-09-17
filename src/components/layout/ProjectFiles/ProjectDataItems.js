@@ -3,19 +3,42 @@ import { Image } from './index'
 import styled from 'styled-components'
 
 export const PDContainer = styled.div`
-  padding: 2rem;
-  width: 400px;
+  padding: 1rem;
+  width: 500px;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+`
+
+export const PDInner = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+`
+
+export const BTNS = styled.div`
+  button {
+    width: 100px;
+    padding: 8px 20px;
+    margin: 24px;
+    background-color: red;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+  }
   a {
     color: #f1f3f8;
     text-decoration: none;
   }
-  p {
-    font-size: 18px;
-  }
-  @media (max-width: 480px) {
-    padding: 2rem;
-    width: 100%;
-  }
+  display: flex;
+`
+
+export const PDInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-size: 14px;
+  padding: 30px 30px;
 `
 
 export const ProjectDataItems = ({
@@ -26,15 +49,19 @@ export const ProjectDataItems = ({
 }) => {
   return (
     <PDContainer>
-      <a href={src} target="_blank" rel="noopener noreferrer">
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <div>
+        <PDInner>
           <Image src={img} />
-          <div style={{ display: 'flex', flexDirection: 'column', backgroundColor: '#fff', color: '#000' }}>
+          <PDInfo>
             <p>{title}</p>
             <p>{desc}</p>
-          </div>
-        </div>
-      </a>
+          </PDInfo>
+          <BTNS>
+            <button><a href={src} target="_blank" rel="noopener noreferrer">Click</a></button>
+            <button><a href={src} target="_blank" rel="noopener noreferrer">View Code</a></button>
+          </BTNS>
+        </PDInner>
+      </div>
     </PDContainer>
   )
 }
