@@ -19,4 +19,8 @@ export const Image = styled.img`
   height: 270px;
   border-radius: 10px 10px 0 0;
   opacity: 0;
+  pointer-events: none;
+  @media (max-width: 480px) {
+    height: 100%;
+  }
 `

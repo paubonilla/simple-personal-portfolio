@@ -13,7 +13,7 @@ export const PDContainer = styled.div`
     flex-direction: column;
     justify-content: space-around;
     border-radius: 5px;
-    padding: 1rem;
+    padding: 1.75rem;
   }
 `
 
@@ -23,22 +23,42 @@ export const PDInner = styled.div`
   background-color: #fff;
   border-radius: 0 0 10px 10px;
   opacity: 0;
+  padding-bottom: 20px;
+  @media (max-width: 480px) {
+    padding-bottom: 10px;
+  }
+  box-shadow: 0 2.8px 2.2px rgb(23, 24, 28, 0.034), 0 6.7px 5.3px rgb(23, 24, 28, 0.048), 0 12.5px 10px rgb(23, 24, 28, 0.06), 0 22.3px 17.9px rgb(23, 24, 28, 0.072), 0 41.8px 33.4px rgb(23, 24, 28, 0.086), 0 100px 80px rgb(23, 24, 28, 0.12), inset 0 0 100px 100px rgb(23, 24, 28, 0.12);
 `
 
 export const BTNS = styled.div`
-  button {
-    width: 100px;
-    padding: 8px 20px;
-    margin: 24px;
-    background-color: red;
-    outline: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .button {
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 8px 24px;
+    border-radius: 7px;
+    background-color: #393b44;
     border: none;
-  }
-  a {
     color: #f1f3f8;
     text-decoration: none;
+    &:hover {
+      color: #393b44;
+      background-color: #f1f3f8;
+    }
   }
-  display: flex;
+  @media (max-width: 480px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .button {
+      width: 90%;
+      margin: 5px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
 `
 
 export const PDInfo = styled.div`
@@ -46,20 +66,35 @@ export const PDInfo = styled.div`
   flex-direction: column;
   color: #393b44;
   font-size: 14px;
-  padding: 30px 30px 0 30px;
+  padding: 20px 30px 0 30px;
   .title {
     font-size: 24px;
     opacity: 0;
     margin-top: 20px;
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 480px) {
+    text-align: center;
   }
   .desc {
     font-size: 14px;
     opacity: 0;
+    @media (max-width: 480px) {
+      font-size: 12px;
+      text-align: left;
+    }
   }
   .comment {
     color: rgb(0, 118, 0);
     font-size: 12px;
     font-family: "Source Code Pro", monospace;
+    margin-bottom: 20px;
+    @media (max-width: 480px) {
+      text-align: left;
+      margin-bottom: 15px;
+    }
   }
 `
 
@@ -95,8 +130,8 @@ export const ProjectDataItems = ({
               <span className="comment">{comment}</span>
             </PDInfo>
             <BTNS>
-              <button><a href={src} target="_blank" rel="noopener noreferrer">Click</a></button>
-              <button><a href={src} target="_blank" rel="noopener noreferrer">View Code</a></button>
+              <a className="button" href={src} target="_blank" rel="noopener noreferrer">Click</a>
+              <a className="button" href={src} target="_blank" rel="noopener noreferrer">View Code</a>
             </BTNS>
           </PDInner>
         </div>
