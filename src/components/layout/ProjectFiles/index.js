@@ -16,7 +16,7 @@ export const ProjectContainer = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  height: 270px;
+  height: 255px;
   border-radius: 10px 10px 0 0;
   opacity: 0;
   pointer-events: none;
@@ -49,7 +49,14 @@ export const PDInner = styled.div`
   @media (max-width: 480px) {
     padding-bottom: 10px;
   }
-  box-shadow: 0 2.8px 2.2px rgb(23, 24, 28, 0.034), 0 6.7px 5.3px rgb(23, 24, 28, 0.048), 0 12.5px 10px rgb(23, 24, 28, 0.06), 0 22.3px 17.9px rgb(23, 24, 28, 0.072), 0 41.8px 33.4px rgb(23, 24, 28, 0.086), 0 100px 80px rgb(23, 24, 28, 0.12), inset 0 0 100px 100px rgb(23, 24, 28, 0.12);
+  box-shadow: 
+  0 2.8px 2.2px rgb(23, 24, 28, 0.034), 
+  0 6.7px 5.3px rgb(23, 24, 28, 0.048), 
+  0 12.5px 10px rgb(23, 24, 28, 0.06), 
+  0 22.3px 17.9px rgb(23, 24, 28, 0.072), 
+  0 41.8px 33.4px rgb(23, 24, 28, 0.086), 
+  0 100px 80px rgb(23, 24, 28, 0.12), 
+  inset 0 0 100px 100px rgb(23, 24, 28, 0.12);
 `
 
 export const BTNSContainer = styled.div`

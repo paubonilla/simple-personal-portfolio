@@ -8,7 +8,7 @@ import Portfolio from './components/pages/Portfolio';
 import Projects from './components/pages/Projects/Projects';
 import Blog from './components/pages/Blog';
 import About from './components/pages/About/About';
-
+import Gallery from './components/pages/Gallery/Gallery';
 import styled from 'styled-components'
 
 export const AppContainer = styled.div`
@@ -25,6 +25,7 @@ function App() {
         <Route path='/projects' component={Projects} />
         <Route path='/blog' component={Blog} />
         <Route path='/about' component={About} />
+        <Route path='/gallery' component={Gallery} />
       </Switch>
       {/* <Footer /> */}
     </AppContainer>
