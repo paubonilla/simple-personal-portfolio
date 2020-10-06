@@ -28,7 +28,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => { setLoading(false); }, 3000)
+    setTimeout(() => { setLoading(false); }, 1000) //make it 3000 pag natapos mo na lahat, tapusin mo na kasi
   }, [])
   return (
     <>

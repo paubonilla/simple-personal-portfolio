@@ -1,9 +1,9 @@
 import React from 'react'
 import CardItem from './CardItem'
 import pic3 from '../../../images/work.jpg'
-import pic5 from '../../../images/img-5.jpg'
-import pic1 from '../../../images/img-1.jpg'
-import pic6 from '../../../images/img-6.jpg'
+import pic5 from '../../../images/k8.jpg'
+import pic1 from '../../../images/k8.jpg'
+import pic6 from '../../../images/work.jpg'
 import { CardsContainer, CardsWrapper, CardsInner, CardsItemsContainer } from '../Cards/index'
 import './Cards.scss'
 
