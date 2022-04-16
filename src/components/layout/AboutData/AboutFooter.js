@@ -31,7 +31,7 @@ export const AboutFooter = ({
         <AboutFooterLinkWrapper>
           <AboutFooterLinkItem style={{ margin: 0, padding: '40px 0', fontSize: '18px' }}>
             <h5>Social</h5>
-            <a href="https://www.instagram.com/impaubonilla/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.instagram.com/paulobonilla/" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://www.facebook.com/pxixcv" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://www.youtube.com/channel/UCOzqf6znGEBswEYLu0exL-A?view_as=subscriber" target="_blank" rel="noopener noreferrer">Youtube</a>
             <a href="https://twitter.com/pxixcv" target="_blank" rel="noopener noreferrer">Twitter</a>
