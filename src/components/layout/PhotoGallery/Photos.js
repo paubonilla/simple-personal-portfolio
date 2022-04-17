@@ -1,6 +1,5 @@
 import React from 'react'
 import family from '../../../images/gallery/family.jpg'
-
 import styled from 'styled-components'
 
 export const GContainer = styled.div`

@@ -59,12 +59,14 @@ body {
 }
 
 .blog {
-  background-image: url("images/k8.jpg");
+  // background-image: url("images/k8.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 0 5%;
+  margin: 0 auto;
   color: $white;
-  font-size: 100px;
+  font-size: 45px;
   @media (max-width: 768px) {
     font-size: 40px;
   }

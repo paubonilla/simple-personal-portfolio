@@ -21,7 +21,7 @@ export default function AboutDataItems({ fullName, field, location, desc, header
             </div>
             <div className="column">
               <strong>{header5}</strong>
-              <p className="subheader">This site was built with React.js</p>
+              <p className="subheader">This site is built with React.js</p>
             </div>
           </div>
           <div className="row__two">
@@ -32,6 +32,7 @@ export default function AboutDataItems({ fullName, field, location, desc, header
               <p>Adobe Illustrator</p>
               <p>Adobe Photoshop</p>
               <p>Adobe Premiere Pro</p>
+              <p>Adobe After Effects</p>
             </div>
           </div>
           <div className="row__three">
