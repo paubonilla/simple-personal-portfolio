@@ -6,7 +6,7 @@ export default function Blog() {
     <>
       <h1 className="blog">
         Blog Page
-
+        <br />
         <p>about me</p>
       </h1>
     </>

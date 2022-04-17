@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import './App.scss';
-import { Switch, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Nav from './components/layout/Nav/Nav';
 // import Footer from './components/layout/Footer/Footer';
 import Home from './components/pages/Home/Home';
@@ -39,14 +39,14 @@ function App() {
         :
         <AppContainer>
           <Nav />
-          <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/portfolio' component={Portfolio} />
-            <Route path='/projects' component={Projects} />
-            <Route path='/blog' component={Blog} />
-            <Route path='/about' component={About} />
-            <Route path='/gallery' component={Gallery} />
-          </Switch>
+          <Routes>
+            <Route path='/' exact element={<Home />} />
+            <Route path='/portfolio' element={<Portfolio />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/blog' element={<Blog />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/gallery' element={<Gallery />} />
+          </Routes>
           {/* <Footer /> */}
         </AppContainer>}
     </>
