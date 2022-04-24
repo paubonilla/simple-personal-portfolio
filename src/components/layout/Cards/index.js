@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const CardsContainer = styled.div`
   padding: 4rem;
-  background: #f1f3f8;
+  background: #464648;
   > h1 {
     text-align: center;
   }
@@ -59,7 +59,7 @@ export const CardsItemPicWrap = styled.figure`
   width: 100%;
   padding-top: 80%;
   overflow: hidden;
-  &::after {
+  /* &::after {
     content: attr(data-category);
     position: absolute;
     bottom: 0;
@@ -72,7 +72,7 @@ export const CardsItemPicWrap = styled.figure`
     color: #fff;
     background-color: #1f98f4;
     box-sizing: border-box;
-  }
+  } */
 `
 
 export const CardsItemImage = styled.img`

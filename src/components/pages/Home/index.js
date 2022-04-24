@@ -9,6 +9,7 @@ export const ProgressBar = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #393b44;
+  border-radius: 1rem;
   @media (max-width: 480px) {
     padding: 30px;
     margin: 0;

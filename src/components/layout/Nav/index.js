@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const NavBar = styled.nav`
-  /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, #393b44 100%); */
+  /* background: linear-gradient(90deg, rgb(28, 27, 27, 0.2) 0%, #393b44 100%); */
+  /* background-color: rgba(193, 193, 193, 0.056); */
   height: 80px;
   display: flex;
   justify-content: center;
@@ -56,6 +57,7 @@ export const NavItem = styled.li`
     height: 100%;
     transition: all 0.5s ease-out;
     color: #f1f3f8;
+    mix-blend-mode: color-burn;
     &:hover {
       color: #8d93ab;
       transition: all 0.2s ease-out;

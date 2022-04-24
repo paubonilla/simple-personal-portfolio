@@ -15,7 +15,7 @@ export default function CardItem(props) {
       <CardsItem>
         <Link to={props.path} className="cards__item__link">
           <CardsItemPicWrap
-            data-category={props.label}
+            // data-category={props.label}
             className="cards__item__pic-wrap">
             <CardsItemImage
               src={props.src}
